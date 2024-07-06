@@ -1,12 +1,14 @@
+import Image from "next/image";
 import React from "react";
 
 interface HeroCardProps {
-  src: string;
+  src: any;
   alt?: string;
   headContent: string;
   mainContent: string;
   reverse?: boolean;
 }
+
 const HeroCard: React.FC<HeroCardProps> = ({
   src,
   alt,
@@ -15,29 +17,31 @@ const HeroCard: React.FC<HeroCardProps> = ({
   mainContent,
 }) => {
   return (
-    <div className="hero my-10 mx-0">
+    <div className="">
       <div
-        className={`hero-content flex-col lg:flex-row${
-          reverse ? "-reverse" : ""
-        }`}
+        className={` flex items-center justify-between flex-wrap ${ reverse && "flex-row-reverse"}`}
       >
-        <img
+        <Image
+          width={500}
+
+          height={500}
           src={src}
-          className="max-w-sm rounded-lg shadow-2xl shadow-green-200 "
-          alt={alt}
+          loading={"lazy"}
+          className=" aspect-square  "
+          alt={`${alt}`}
         />
-        <div className={`w-1/2 }`}>
+        <div className={`w-1/2 ${reverse ? '' : 'ml-10'}`}>
           <h1
             className={`header-class pt-5 text-left heading text-[#2F8455] w-4/5 ${
-              reverse ? "" : "w-full ml-10"
-            } `}
+              reverse ? '' : 'w-full'
+            }`}
           >
             {headContent}
           </h1>
-          <p className={` ${reverse ? "py-6 w-2/3" : " w-3/4 ml-10"}`}>
+          <p >
             {mainContent}
           </p>
-          {/* <button className="btn btn-primary">Get Started</button> */}
+
         </div>
       </div>
     </div>

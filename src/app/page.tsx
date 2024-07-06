@@ -13,7 +13,7 @@ import zoom from "@/assets/untwineImg/zoom.png";
 import formImg from "@/assets/Service 24_7-bro 1.png";
 import therapyImg from "@/assets/Marriage counseling-bro 1.png";
 import doveImg from "@/assets/pigeon.png";
-import YourMentalHealthHome from "@/assets/untwineImg/YourMentalHealthHome-trans.png";
+import YourMentalHealthHome from "@/assets/untwineImg/Your Mental Health Home 1.png";
 import appstore from "@/assets/appstore.svg";
 import googleplay from "@/assets/googleplay.svg";
 import communcationImg from "@/assets/communcationImage.png";
@@ -29,7 +29,7 @@ import HeroCard from "./components/HeroCard";
 import brainFaceAnimation from "../../public/Your Mental Health Home.svg";
 import { url } from "inspector";
 import Card from "./components/Card";
-// import HomeVideo from "@videos/HomeVideo.mp4";
+import leftHome from '@/assets/untwineImg/lefthome.png'
 
 const clientLogo = [
   {
@@ -97,34 +97,30 @@ const cardData = [
 
 const unlockData = [
   {
-    heading: "Life Coaching:",
-    para: "Achieve your goals, both personally and professionally. Our coaches guide you in setting clear objectives, developing actionable plans, and boosting your productivity.",
+    heading: "Mental Health",
+    para: "Our counselors specialize in supporting individuals with a wide range of mental health conditions, including depression, anxiety, panic attack and trauma. We provide a safe and judgment- free space to explore your thoughts, feelings, and behaviors.",
   },
   {
-    heading: "Stress Coaching:",
-    para: "Feel calmer and more in control. Our stress management specialists equip you with effective techniques to manage emotional triggers and navigate stressful situations.",
+    heading: "Life Transitions",
+    para: "Whether you're navigating a relationship breakdown, job loss, or the grieving process, our counselors can help you develop effective coping strategies to overcome life's challenges and emerge stronger.",
   },
   {
-    heading: "Love & Relationship Coaching:",
-    para: "Build stronger connections. Expert guidance helps you navigate relationship dynamics, foster healthy communication, and resolve conflicts.",
-  },
-  {
-    heading: "Sex Therapy:",
-    para: "Enhance intimacy and well-being. We provide professional support to individuals and couples addressing sexual concerns, promoting a more fulfilling and satisfying experience.",
+    heading: " Personal Growth",
+    para: "Our sessions focus on empowering you to build self-awareness, improve self- esteem, and cultivate a healthier relationship with your emotions. Together, we'll work towards a more fulfilling and balanced life.",
   },
 ];
 
 export default async function Home() {
   return (
     <>
-      <section className="xs:h-screen flex gap-2 flex-col px-2">
+      <section className=" page-width xs:h-screen flex gap-2 flex-col px-2">
         <div className="h-1/8">
-          <h2 className="text-4xl text-center animate-scaleUp ">
+          <h2 className="text-4xl font-bold text-center animate-scaleUp ">
             Your Mental <span className="text-primary text-6xl">Health</span>{" "}
             Home
           </h2>
         </div>
-        <div className="h-1/4">
+        <div className="h-3/8">
           <p className=" text-center text-xl animate-fadeIn">
             Connect with Untwine and step into a safe space where privacy and
             confidentiality come first. Explore resources, counseling, and
@@ -133,7 +129,7 @@ export default async function Home() {
           </p>
         </div>
         <div className="h-1/2">
-          <div className="flex justify-center items-center relative animate-slideInLeft">
+          <div className="flex justify-center items-center relative md: animate-slideInLeft">
             <Image
               width={1080}
               height={1080}
@@ -143,246 +139,170 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      {/* <section>
-        <div className="relative w-screen h-[90vh] md:h-screen flex items-center justify-center overflow-x-hidden">
-          <Image
-            loading="eager"
-            className=" absolute z-[3]  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-            alt=""
-            width={700}
-            height={700}
-            src={fore.src}
-          />
-          <Image
-            loading="eager"
-            style={{ objectFit: "contain" }}
-            className=" top-0 -left-[11%] -rotate-[9deg] scale-[1.75] md:scale-100 md:rotate-0 md:-ml-16 absolute z-[2]  md:-top-1/2 md:left-0"
-            alt=""
-            width={1920}
-            height={1080}
-            src={strip.src}
-          />
-          <VideoPlayer
-            src="https://tsuahomfkoxepnrgbjcu.supabase.co/storage/v1/object/public/assets/banner800.mp4"
-            width={700}
-            height={700}
-            className={""}
-          />
-
-          <div id="video-placeholder" className="absolute inset-0 flex items-center justify-center bg-gray-200 cursor-pointer" onclick="playVideo()">
-      <img src="path/to/placeholder.jpg" alt="Video Placeholder" class="w-full h-auto">
-      <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-xl font-bold">Play</div>
-    </div>
-
-          <video id="video" className="w-full h-auto hidden" controls>
-            <source
-              className="z-10"
-              src={
-                "https://videos.pexels.com/video-files/4100357/4100357-uhd_2732_1440_25fps.mp4"
-              }
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </section> */}
-
       <div className="relative">
-        <section>
-          <div className="bg-primary relative pt-8 md:pt-20">
-            <div className="page-width">
-              <div className="flex  flex-wrap justify-between">
-                <div className=" w-full md:w-1/2">
-                  <h1 className="footer-class text-white pb-2  heading">
-                    Thrive at Work
-                  </h1>
-                  <p className="text-white ">
-                    Personalized Mental Wellness for Your Employees Our program
-                    goes beyond just physical health, focusing on mental
-                    wellbeing, financial fitness, and work-life balance for a
-                    holistic approach to thriving.{" "}
-                  </p>
-                  <div className="text-white flex items-center pt-9 gap-2 mb-10">
-                    <p>Request callback</p>
-                    <Link
-                      aria-label="contact"
-                      className="btn btn-circle btn-secondary hover:animate-pulse"
-                      href="#contact-us"
-                    >
-                      <svg
-                        width="27"
-                        height="16"
-                        viewBox="0 0 27 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM0 9H26V7H0V9Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </Link>
-                  </div>
-                </div>
-                <div>
-                  <div className=" grid md:grid-cols-3 gap-4">
-                    <div className="bg-[#DDDDDD] col-span-1 h-[200px]  rounded-xl">
-                      <Image
-                        width={171}
-                        height={200}
-                        src={welcome_img_1}
-                        className="h-[200px] w-[171px] object-contain"
-                        alt="illustration of girl sitting"
-                      />
-                    </div>
-                    <div className="bg-[#EA1410] flex flex-col justify-center col-span-2 rounded-xl p-4">
-                      <Avatar />
-                      <div className="flex items-center  gap-2 pt-2">
-                        <p className=" text-4xl md:text-6xl mb-0 text-white">
-                          2K+
-                        </p>
-                        <p className="text-white ">
-                          Lives have been
-                          <br />
-                          transformed.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br />
-              <br />
-
-              {/* <section className="flex flex-wrap items-start justify-between gap-4 ">
-                <div className=" content-center  ">
-                  <h1 className="heading  footer-class pb-2 text-white">
-                    Not a Corporate Employee?{" "}
-                  </h1>
-                  <p className="text-white">
-                    Download the App Now & take a session.
-                  </p>
-                </div>
-                <div className=" flex md:grid grid-cols-2 gap-4 md:gap-8">
-                  <Link
-                    aria-label="apple app store logo"
-                    href="https://www.apple.com/in/app-store/"
-                    className=""
-                  >
-                    <Image
-                      className=""
-                      src={appstore}
-                      alt="App Store"
-                      width={203.95}
-                      height={59}
-                    />
-                  </Link>
-                  <Link
-                    aria-label="google play store logo"
-                    href={"https://play.google.com/store/games?hl=en&pli=1"}
-                    className=""
-                  >
-                    <Image
-                      src={googleplay}
-                      alt="Google Play"
-                      width={203.95}
-                      height={59}
-                    />
-                  </Link>
-                </div>
-              </section> */}
-            </div>
-            <div className="absolute top-[100%] w-full z-0 overflow-x-clip ">
-              {/* <svg
-                className="transform scale-x-[-1.5]"
-                xmlns=" http://www.w3.org/2000/svg"
-                viewBox="0 0 1440 200"
-              >
-                <path
-                  className=" fill-primary"
-                  fill=""
-                  fillOpacity="1"
-                  d="M0,128L40,138.7C80,149,160,171,240,181.3C320,192,400,192,480,176C560,160,640,128,720,106.7C800,85,880,75,960,69.3C1040,64,1120,64,1200,85.3C1280,107,1360,149,1400,170.7L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
-                ></path>
-              </svg> */}
-            </div>
-          </div>
-        </section>
-
-        <section className=" pt-20 md:pt-40">
-          <div className="page-width flex flex-wrap ">
+      
+        <section className=" ">
+          <br/>
+          <br/>
+          <div className="page-width flex flex-wrap  ">
             <div>
               <h2
                 id="about"
-                className="heading  footer-class pb-2 text-[#2F8455]"
+                className="heading text-center  footer-class pb-2 text-[#2F8455]"
               >
                 <span className="text-secondary">Why Choose {"  "}</span>
                 Untwine?
               </h2>
-              <p className=" md:max-w-[50%]">
+              <p className=" m-auto text-center md:max-w-[50%]">
                 We adapt to your preferences, ensuring a safe and supportive
                 environment. Because we understand the courage it takes to take
                 that first step towards healing. Untwine offers flexible therapy
                 options to suit your needs.
               </p>
             </div>
-            <div>
+            <div className=" flex items-center justify-between w-full flex-wrap">
               <Card
                 title="Therapy in Your Safe Space"
-                content="We meet you at a location of your choice a cozy cafe, a peaceful beach, a serene garden or at home. "
+                content="We meet you at a location of your choice a cozy cafe, a peaceful beach, a serene garden or at home."
               />
               <Card
-                title="Therapy in Your Safe Space"
-                content="We meet you at a location of your choice a cozy cafe, a peaceful beach, a serene garden or at home. "
+                title="Clinic or session setup"
+                content="Private Sessions: We offer sessions in a private setting, such as a closed space or a clinic."
               />
               <Card
-                title="Therapy in Your Safe Space"
-                content="We meet you at a location of your choice a cozy cafe, a peaceful beach, a serene garden or at home. "
+                title="Virtual Therapy"
+                content="Via Skype, Zoom, Google meet, phone call or chat."
               />
             </div>
           </div>
+          <br/>
+          <br/>
         </section>
 
         <section>
+          <br/>
+          <br/>
           <div className="page-width">
+            <h2 className="text-center m-auto text-2xl md:text-4xl  font-bold">Our Flexible Approach</h2>
+            <br/>
             <HeroCard
-              src={"https://placehold.co/300x200"}
-              alt="first card"
-              headContent="Untwine: Your Mental Health Home "
-              mainContent="Connect with Untwine and step into a safe space where privacy and confidentiality come first. Explore resources, counseling, and guidance tailored to help you navigate life's challenges with confidence and resilience."
+              src={leftHome}
+              alt="Convenient Scheduling"
+              headContent="Convenient Scheduling"
+              mainContent="We offer appointments from Monday to Friday, from 9:00 am to 7:00 pm, ensuring we can accommodate your needs and preferences."
             />
             <HeroCard
-              src={"https://placehold.co/300x200"}
-              alt="second card"
-              headContent=" Choose Untwine? "
-              mainContent="We adapt to your preferences, ensuring a safe and supportive environment. Because we understand the courage it takes to take that first step towards healing. Untwine offers flexible therapy options to suit your needs."
+              src={leftHome}
+              alt="Diverse Modalities"
               reverse={true}
+              headContent="Diverse Modalities"
+              mainContent="We're happy to meet you in person, at your home or a café, or connect virtually via Skype, Zoom, Google Duo, or even a simple phone call."
             />
-          </div>
-        </section>
-        <section>
-          <div className="flex gap-5 m-10">
-            <Card
-              title="Therapy in Your Safe Space"
-              content="We meet you at a location of your choice a cozy cafe, a peaceful beach, a serene garden or at home. "
-            />
-            <Card
-              title="Clinic or  session setup icon"
-              content="Private Sessions: We offer sessions in a private setting, such as a closed space or a clinic"
+           <HeroCard
+              src={leftHome}
+              alt="Flexible Session Lengths"
+              headContent="Flexible Session Lengths"
+              mainContent="Our sessions range from 45 minutes, 1 or 1.5 hour allowing us to provide the time and attention you deserve."
             />
           </div>
         </section>
 
-        <section></section>
+
+        <div className="bg-[#E5FFF2]/30">
+        <section className="page-width pt-8 md:pt-20">
+        <br/>
+          <br/>
+        <div className="grid grid-cols-2 gap-4 pb-4">
+          <div className="col-span-1">
+            <h2
+              id="services"
+              className="heading  footer-class pb-2"
+            >
+              Adult Counseling: Empowering Growth
+            </h2>
+          </div>
+          <div className="col-span-1 flex items-end justify-end">
+            <Image src={doveImg} alt="dove" width={80} height={80} />
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row md:space-x-4 p-4">
+          {/* First column with an image */}
+          <div className="md:w-1/2">
+            <Image
+              src={therapyImg}
+              alt="Therapies"
+              width={500}
+              height={400}
+              className="rounded-lg"
+            />
+          </div>
+          {/* Second column with nested rows */}
+          <div className="md:w-1/2 flex flex-col space-y-4">
+            {/* First nested row */}
+            <div className=" grid md:grid-cols-2">
+              {unlockData.map((item, index) => (
+                <div key={index} className="  md:p-4">
+                  <div className="  w-16 h-16 bg-primary hover:bg-primary-content rounded-full flex items-center justify-center mb-2 transition-colors duration-300">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-8 h-8 text-white"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
+                      />
+                    </svg>
+                  </div>
+                  <h2 className="subheading header-class font-bold mb-1">
+                    {item.heading}
+                  </h2>
+                  <p className="">{item.para}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <br/>
+        <br/>
+        </section>
+      </div>
+      <div className="w-full z-0 overflow-x-clip">
+        <svg
+          className="y=-10%"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <defs>
+            <filter id="shadow" x="-50%" y="-8%" width="200%" height="130%">
+              <feGaussianBlur in="SourceAlpha" stdDeviation="5" />
+              <feOffset dx="5" dy="3" result="offsetblur" />
+              <feFlood floodColor="rgba(200, 240, 230, 0.5)" />
+              <feComposite in2="offsetblur" operator="in" />
+              <feMerge>
+                <feMergeNode />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <path
+            fill="#F8FFFB"
+            fillOpacity="1"
+            d="M0,192L80,202.7C160,213,320,235,480,208C640,181,800,107,960,85.3C1120,64,1280,96,1360,112L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+            filter="url(#shadow)"
+          ></path>
+        </svg>
+      </div>
+
+        
         <section>
+         
           <div className="page-width">
             <div className=" grid md:md:grid-cols-2 ">
-              {/* <VideoPlayer
-                src="https://pwzxzpqqkjmunvutglwm.supabase.co/storage/v1/object/public/assets/1_1_session800__3_.mp4?t=2024-06-24T13%3A46%3A06.918Z"
-                width={1920}
-                height={400}
-                className=" w-full mix-blend-darken md:max-h-[500px] "
-              /> */}
               <video
                 width="1920"
                 height="400"
@@ -482,166 +402,10 @@ export default async function Home() {
           </div>
         </section>
       </div>
-
-      <section className="py-10  page-width">
-        <div className="grid md:grid-cols-2 gap-4   ">
-          <div className="col-span-1">
-            <h2 className="heading  footer-class pb-2 text-[#26275F]">
-              Why Lifetalk?
-            </h2>
-            {/* <p className="">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            </p> */}
-          </div>
-          <div className="col-span-1 flex items-end md:justify-end">
-            <div className="flex items-center gap-2">
-              <p className="text-primary font-semibold">Know more</p>
-              <Link
-                aria-label="contact"
-                className="btn btn-circle btn-primary hover:animate-pulse"
-                href="#contact-us"
-              >
-                <svg
-                  width="27"
-                  height="16"
-                  viewBox="0 0 27 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM0 9H26V7H0V9Z"
-                    fill="white"
-                  />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-wrap  justify-between md:gap-10">
-          {cardData.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col flex-grow w-96 items-center"
-            >
-              <div className="bg-[#0C64BC] rounded-full p-4 relative -bottom-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-8 h-8 text-white"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
-                  />
-                </svg>
-              </div>
-              <div className="bg-[#8A84E2] p-7 rounded-[30px] flex-grow flex flex-col">
-                <p className="text-base text-white pb-2 font-semibold text-center">
-                  {item.heading}
-                </p>
-                <p className="text-white text-center">{item.para}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* -- End of why choose us section --  */}
-      <div className="bg-[#E5FFF2]/30">
-        <section className="page-width pt-8 md:pt-20">
-          <Theraoist />
-        </section>
-      </div>
-      <div className="w-full z-0 overflow-x-clip">
-        <svg
-          className="y=-10%"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-        >
-          <defs>
-            <filter id="shadow" x="-50%" y="-8%" width="200%" height="130%">
-              <feGaussianBlur in="SourceAlpha" stdDeviation="5" />
-              <feOffset dx="5" dy="3" result="offsetblur" />
-              <feFlood floodColor="rgba(200, 240, 230, 0.5)" />
-              <feComposite in2="offsetblur" operator="in" />
-              <feMerge>
-                <feMergeNode />
-                <feMergeNode in="SourceGraphic" />
-              </feMerge>
-            </filter>
-          </defs>
-          <path
-            fill="#F8FFFB"
-            fillOpacity="1"
-            d="M0,192L80,202.7C160,213,320,235,480,208C640,181,800,107,960,85.3C1120,64,1280,96,1360,112L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
-            filter="url(#shadow)"
-          ></path>
-        </svg>
-      </div>
-      <section className="page-width">
-        <div className="grid grid-cols-2 gap-4 pb-4">
-          <div className="col-span-1">
-            <h2
-              id="services"
-              className="heading  footer-class pb-2 text-[#26275F]"
-            >
-              Unlock Your Potential
-            </h2>
-          </div>
-          <div className="col-span-1 flex items-end justify-end">
-            <Image src={doveImg} alt="dove" width={80} height={80} />
-          </div>
-        </div>
-        <div className="flex flex-col md:flex-row md:space-x-4 p-4">
-          {/* First column with an image */}
-          <div className="md:w-1/2">
-            <Image
-              src={therapyImg}
-              alt="Therapies"
-              width={500}
-              height={400}
-              className="rounded-lg"
-            />
-          </div>
-          {/* Second column with nested rows */}
-          <div className="md:w-1/2 flex flex-col space-y-4">
-            {/* First nested row */}
-            <div className=" grid md:grid-cols-2">
-              {unlockData.map((item, index) => (
-                <div key={index} className="  md:p-4">
-                  <div className="  w-16 h-16 bg-[#8A84E2] hover:bg-[#26275F] rounded-full flex items-center justify-center mb-2 transition-colors duration-300">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="w-8 h-8 text-white"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
-                      />
-                    </svg>
-                  </div>
-                  <h2 className="subheading header-class font-bold mb-1">
-                    {item.heading}
-                  </h2>
-                  <p className="">{item.para}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
+      
       {/*--Carousel*/}
-      <section className="md:pt-10 page-width">
+      {/* <section className="md:pt-10 page-width">
         <h2 className="heading footer-class pb-2 text-[#26275F] text-center">
           Virtual Therapy
         </h2>
@@ -683,7 +447,7 @@ export default async function Home() {
             </>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section>
         <div className="page-width pt-16 ">

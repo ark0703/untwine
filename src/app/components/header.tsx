@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { menu } from "@/app/data";
 import logo from "@/assets/image-removebg-preview (4) 1.png";
-import untwineLogo from "@/assets/untwineImg/UntwineLogo.png";
+import untwineLogo from "@/assets/untwineImg/Untwine_Logo-removebg-preview 1.png";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
