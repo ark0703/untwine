@@ -97,20 +97,16 @@ const cardData = [
 
 const unlockData = [
   {
-    heading: "Life Coaching:",
-    para: "Achieve your goals, both personally and professionally. Our coaches guide you in setting clear objectives, developing actionable plans, and boosting your productivity.",
+    heading: "Mental Health:",
+    para: "Our counselors specialize in supporting individuals with a wide range of mental health conditions, including depression, anxiety, panic attack and trauma. We provide a safe and judgment- free space to explore your thoughts, feelings, and behaviors.",
   },
   {
-    heading: "Stress Coaching:",
-    para: "Feel calmer and more in control. Our stress management specialists equip you with effective techniques to manage emotional triggers and navigate stressful situations.",
+    heading: "Life Transitions:",
+    para: "Whether you're navigating a relationship breakdown, job loss, or the grieving process, our counselors can help you develop effective coping strategies to overcome life's challenges and emerge stronger.",
   },
   {
-    heading: "Love & Relationship Coaching:",
-    para: "Build stronger connections. Expert guidance helps you navigate relationship dynamics, foster healthy communication, and resolve conflicts.",
-  },
-  {
-    heading: "Sex Therapy:",
-    para: "Enhance intimacy and well-being. We provide professional support to individuals and couples addressing sexual concerns, promoting a more fulfilling and satisfying experience.",
+    heading: "Personal Growth:",
+    para: "Our sessions focus on empowering you to build self-awareness, improve self- esteem, and cultivate a healthier relationship with your emotions. Together, we'll work towards a more fulfilling and balanced life.",
   },
 ];
 
@@ -376,6 +372,19 @@ export default async function Home() {
         <section></section>
         <section>
           <div className="page-width">
+            <div className="grid grid-cols-2 gap-4 pb-4">
+              <div className="col-span-1">
+                <h2
+                  id="services"
+                  className="heading  footer-class pb-2 text-[#26275F] "
+                >
+                  Geriatric Therapy: Enriching the Golden Years
+                </h2>
+              </div>
+              <div className="col-span-1 flex items-center justify-end">
+                <Image src={doveImg} alt="dove" width={80} height={80} />
+              </div>
+            </div>
             <div className=" grid md:md:grid-cols-2 ">
               {/* <VideoPlayer
                 src="https://pwzxzpqqkjmunvutglwm.supabase.co/storage/v1/object/public/assets/1_1_session800__3_.mp4?t=2024-06-24T13%3A46%3A06.918Z"
@@ -401,13 +410,15 @@ export default async function Home() {
 
               <div className="flex justify-center flex-col  md:px-20">
                 <h2 className="text-left heading header-class  text-[#C84309]">
-                  1:1 Sessions
+                  Cognitive decline
                 </h2>
                 <p className="text-left">
-                  Our convenient in-app platform connects employees with
-                  certified coaches for one-on-one sessions. These personalized
-                  sessions provide the support needed to overcome daily hurdles
-                  and unlock optimal performance.
+                  Our Psychologists use evidence based approach to help
+                  individuals with cognitive decline, resulting from conditions
+                  like Alzheimer's, dementia, stroke, or Parkinson's, to enhance
+                  cognitive abilities and daily functioning skills. This will
+                  address memory difficulties, problem-solving challenges, and
+                  attention and concentration issues.
                 </p>
                 <div className="text-white flex items-center gap-2 mb-10">
                   <p className="text-[#C84309] header-class ">Get Started</p>
@@ -441,7 +452,7 @@ export default async function Home() {
             <div className="md:grid md:grid-cols-2 flex flex-col-reverse">
               <div className="flex justify-center flex-col  md:px-20">
                 <h2 className="header-class pt-5 text-left heading text-[#2F8455]">
-                  Interactive Group Workshops
+                  Physical Limitations
                 </h2>
                 <p className="text-left">
                   Led by experienced facilitators, these engaging sessions equip
@@ -587,9 +598,9 @@ export default async function Home() {
           <div className="col-span-1">
             <h2
               id="services"
-              className="heading  footer-class pb-2 text-[#26275F]"
+              className="heading  footer-class pb-2 text-[#26275F] "
             >
-              Unlock Your Potential
+              Adult Counseling: Empowering Growth
             </h2>
           </div>
           <div className="col-span-1 flex items-end justify-end">
@@ -612,8 +623,8 @@ export default async function Home() {
             {/* First nested row */}
             <div className=" grid md:grid-cols-2">
               {unlockData.map((item, index) => (
-                <div key={index} className="  md:p-4">
-                  <div className="  w-16 h-16 bg-[#8A84E2] hover:bg-[#26275F] rounded-full flex items-center justify-center mb-2 transition-colors duration-300">
+                <div key={index} className="pt-2 md:p-4">
+                  <div className=" w-16 h-16 bg-[#8A84E2] hover:bg-[#26275F] rounded-full flex items-center justify-center mb-2 transition-colors duration-300">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
