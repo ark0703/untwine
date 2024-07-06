@@ -5,7 +5,7 @@ interface CardProps {
 }
 const Card: React.FC<CardProps> = ({ title, content }) => {
   return (
-    <div className="flex flex-col flex-grow w-96 items-center">
+    <div className=" flex flex-col flex-grow w-full max-w-96 items-center">
       <div className="bg-[#30e95e] rounded-full p-4 relative -bottom-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"

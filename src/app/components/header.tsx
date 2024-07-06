@@ -34,7 +34,7 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 w-full z-50 transition-colors duration-300  ${
+      className={`sticky top-0 w-full z-50 transition-colors duration-300  ${
         isScrolled ? "bg-base-100 shadow-sm " : "bg-transparent"
       }`}
     >
@@ -67,8 +67,20 @@ const Header = () => {
         </div> */}
 
         <div className="navbar-end flex items-center gap-4">
-          <FontAwesomeIcon icon={faWhatsapp} size="2x" />
-          <FontAwesomeIcon icon={faPhone} size="lg" />
+          <Link
+            aria-label="contact"
+            className=" hover:animate-pulse"
+            href="#contact-us"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+          </Link>
+          <Link
+            aria-label="contact"
+            className=" hover:animate-pulse"
+            href="#contact-us"
+          >
+            <FontAwesomeIcon icon={faPhone} size="lg" />
+          </Link>
           <details className="dropdown dropdown-end">
             <summary
               onClick={toggleMenu}

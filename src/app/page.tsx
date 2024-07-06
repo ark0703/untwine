@@ -1,5 +1,5 @@
 import Image from "next/image";
-import welcome_img_1 from "@/assets/Working remotely-pana 1.svg";
+import welcome_img_1 from "@/assets/Your Mental Health Home (2).png";
 import Avatar from "./components/avatar";
 import apple from "@/assets/1631341448001.png";
 import figma from "@/assets/300644344_5745913652137591_50658904666476588_n.jpg";
@@ -13,6 +13,7 @@ import zoom from "@/assets/untwineImg/zoom.png";
 import formImg from "@/assets/Service 24_7-bro 1.png";
 import therapyImg from "@/assets/Marriage counseling-bro 1.png";
 import doveImg from "@/assets/pigeon.png";
+import YourMentalHealthHome from "@/assets/untwineImg/YourMentalHealthHome-trans.png";
 import appstore from "@/assets/appstore.svg";
 import googleplay from "@/assets/googleplay.svg";
 import communcationImg from "@/assets/communcationImage.png";
@@ -116,14 +117,32 @@ const unlockData = [
 export default async function Home() {
   return (
     <>
-      <div className="">
-        <div>
-          <h2>
-            Virtual Therapy : Via Skype, Zoom, Google meet, phone call or chat.
+      <section className="xs:h-screen flex gap-2 flex-col px-2">
+        <div className="h-1/8">
+          <h2 className="text-4xl text-center animate-scaleUp ">
+            Your Mental <span className="text-primary text-6xl">Health</span>{" "}
+            Home
           </h2>
         </div>
-        <div>left</div>
-      </div>
+        <div className="h-1/4">
+          <p className=" text-center text-xl animate-fadeIn">
+            Connect with Untwine and step into a safe space where privacy and
+            confidentiality come first. Explore resources, counseling, and
+            guidance tailored to help you navigate life's challenges with
+            confidence and resilience.
+          </p>
+        </div>
+        <div className="h-1/2">
+          <div className="flex justify-center items-center relative animate-slideInLeft">
+            <Image
+              width={1080}
+              height={1080}
+              src={YourMentalHealthHome}
+              alt="illustration of psychiatrist sitting with a client"
+            />
+          </div>
+        </div>
+      </section>
       {/* <section>
         <div className="relative w-screen h-[90vh] md:h-screen flex items-center justify-center overflow-x-hidden">
           <Image
@@ -167,10 +186,6 @@ export default async function Home() {
           </video>
         </div>
       </section> */}
-
-      <section className="h-screen w-full">
-        <p>Home entry</p>
-      </section>
 
       <div className="relative">
         <section>
@@ -331,13 +346,13 @@ export default async function Home() {
         <section>
           <div className="page-width">
             <HeroCard
-              src={"https://placehold.co/1280x780"}
+              src={"https://placehold.co/300x200"}
               alt="first card"
               headContent="Untwine: Your Mental Health Home "
               mainContent="Connect with Untwine and step into a safe space where privacy and confidentiality come first. Explore resources, counseling, and guidance tailored to help you navigate life's challenges with confidence and resilience."
             />
             <HeroCard
-              src={"https://placehold.co/1280x780"}
+              src={"https://placehold.co/300x200"}
               alt="second card"
               headContent=" Choose Untwine? "
               mainContent="We adapt to your preferences, ensuring a safe and supportive environment. Because we understand the courage it takes to take that first step towards healing. Untwine offers flexible therapy options to suit your needs."

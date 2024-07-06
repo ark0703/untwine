@@ -64,7 +64,7 @@ const Footer = () => {
                   href="mailto:admin@thriive.in"
                   className="hover:underline"
                 >
-                  helpdesk@satyapolyclinic.com
+                  untwinetogether@gmail.com
                 </Link>
               </li>
               <li className="flex gap-2 item-center">
