@@ -1,13 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { menu } from "@/app/data";
-import logo from "@/assets/image-removebg-preview (4) 1.png";
 import untwineLogo from "@/assets/untwineImg/Untwine_Logo-removebg-preview 1.png";
 import Image from "next/image";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,23 +36,24 @@ const Header = () => {
     >
       <div className="navbar page-width flex justify-between items-center">
         <div className="navbar-start animate-slideInLeft">
-          <Link aria-label="life talk logo" href={"/"}>
+          <Link aria-label="untwine logo" href={"/"}>
             <Image
               src={untwineLogo}
-              width={logo.width}
-              height={logo.height}
-              alt="life talks logo"
+              width={untwineLogo.width}
+              height={untwineLogo.height}
+              alt="untwineLogo logo"
+              className=" max-w-60 "
             />
           </Link>
         </div>
 
-        {/* <div className="navbar-center hidden md:flex items-center justify-center">
+       <div className="navbar-center hidden md:flex items-center justify-center">
           <ul className="flex w-full items-center justify-center gap-8">
             {menu.map((item) => (
               <li key={item.url}>
                 <Link
                   aria-label={item.text}
-                  className="header-class uppercase"
+                  className="header-class captilize font-medium "
                   href={item.url}
                 >
                   {item.text}
@@ -64,24 +61,13 @@ const Header = () => {
               </li>
             ))}
           </ul>
-        </div> */}
+        </div>
 
         <div className="navbar-end flex items-center gap-4">
-          <Link
-            aria-label="contact"
-            className=" hover:animate-pulse"
-            href="#contact-us"
-          >
-            <FontAwesomeIcon icon={faWhatsapp} size="2x" />
-          </Link>
-          <Link
-            aria-label="contact"
-            className=" hover:animate-pulse"
-            href="#contact-us"
-          >
-            <FontAwesomeIcon icon={faPhone} size="lg" />
-          </Link>
-          <details className="dropdown dropdown-end">
+          <div className="bg-primary text-white">
+
+          </div>
+          <details className="dropdown block md:hidden dropdown-end">
             <summary
               onClick={toggleMenu}
               className="btn-ghost btn btn-circle swap swap-rotate"
@@ -133,7 +119,7 @@ const Header = () => {
                 <li key={item.url}>
                   <Link
                     aria-label={item.text}
-                    className="ml-auto header-class uppercase"
+                    className="ml-auto header-class hover:text-primary "
                     href={item.url}
                   >
                     {item.text}

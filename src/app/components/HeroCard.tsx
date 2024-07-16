@@ -28,7 +28,7 @@ const HeroCard: React.FC<HeroCardProps> = ({
           height={500}
           src={src}
           loading={"lazy"}
-          className=" aspect-square  "
+          className=" aspect-square w-full md:max-w-[50%]  "
           alt={`${alt}`}
         />
         <div className={`w-full md:w-1/2 ${!reverse && "ml-10"}`}>

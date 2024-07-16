@@ -203,20 +203,20 @@ const Footer = () => {
             <h3 className="font-bold mb-4">Download Our App</h3>
             <div className="flex flex-col gap-3">
               <Link aria-label="apple app store logo" href={""} className="">
-                <Image
+                {/* <Image
                   src={appstore}
                   alt="App Store"
                   width={203.95}
                   height={59}
-                />
+                /> */}
               </Link>
               <Link aria-label="google play store logo" href={"/"} className="">
-                <Image
+                {/* <Image
                   src={googleplay}
                   alt="Google Play"
                   width={203.95}
                   height={59}
-                />
+                /> */}
               </Link>
             </div>
           </div>

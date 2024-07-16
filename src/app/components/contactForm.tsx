@@ -16,10 +16,6 @@ const ContactForm = () => {
   const [data, setData] = useState<string[]>([]);
   const [selectedPlatform, setSelectedPlatform] = useState<string>();
 
-  const modeData = ["Physical", "Virtual"];
-  const virtualData = ["Meet", "Skype", "Zoom", "Call/Chat"];
-  const physicalData = ["Clinic", "Home"];
-
   const modeRef = useRef(null);
   const platformRef = useRef(null);
 
@@ -59,7 +55,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className="md:w-1/2">
       <form onSubmit={handleSubmit} method="POST" className="space-y-4">
         {/* First Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -105,48 +101,6 @@ const ContactForm = () => {
           />
         </div>
 
-        {/* Third Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
-          <div className="grid grid-rows-1 grid-cols-2">
-            <details className="dropdown" ref={modeRef}>
-              <summary className="btn m-1">
-                {selectedMode ? selectedMode : "Select Mode"}
-              </summary>
-              <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                {modeData.map((mode) => (
-                  <li key={mode} onClick={() => handleModeSelection(mode)}>
-                    <a>{mode}</a>
-                  </li>
-                ))}
-              </ul>
-            </details>
-
-            <div>
-              {selectedMode && (
-                <details className="dropdown" ref={platformRef}>
-                  <summary className="btn m-1">
-                    {selectedPlatform ? selectedPlatform : "Select Mode"}
-                  </summary>
-                  <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                    {data.map((item, index) => (
-                      <li key={index} onClick={() => handlePlatform(item)}>
-                        <a>{item}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </details>
-              )}
-            </div>
-          </div>
-          {/* <input
-            name="com"
-            type="text"
-            placeholder="Company Name"
-            className="w-full p-3 border border-gray-300 rounded-[20px]"
-            pattern="^[A-Za-z\s.,'-]+$"
-            title="Company name can contain letters, spaces, and characters like ., '-."
-          /> */}
-        </div>
 
         {/* Text Area */}
         <div>
@@ -160,7 +114,7 @@ const ContactForm = () => {
         {/* Submit Button */}
         <div className="col-span-1 flex">
           <div className="flex items-center gap-2">
-            <p className="text-primary font-semibold">send inquiry</p>
+            <p className=" font-semibold capitalize text-white">send inquiry</p>
             <button
               type="submit"
               aria-label="send inquiry"

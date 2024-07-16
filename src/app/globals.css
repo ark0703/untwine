@@ -11,12 +11,13 @@ body {
 
 .header-class {
   /* font-family: 'Playfair Display', serif; */
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .footer-class {
   /* font-family: 'Playfair Display', serif; */
-  font-weight: 700;
+  font-weight: 600;
+  @apply capitalize
 }
 
 .page-width {
