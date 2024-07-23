@@ -24,9 +24,9 @@ import AboutUntwine from "./components/AboutUntwine";
 
 const accordionData = [
   {
-    title: "What is Lifetalk's corporate wellness program?",
+    title: "What is Lifetalk&apos;s corporate wellness program?",
     content:
-      "Lifetalk offers a comprehensive program providing 24/7 access to 1-1 coaching from verified psychologists. With customizable options for group-based wellness workshops, we tailor solutions to meet your company's specific needs.",
+      "Lifetalk offers a comprehensive program providing 24/7 access to 1-1 coaching from verified psychologists. With customizable options for group-based wellness workshops, we tailor solutions to meet your company&apos;s specific needs.",
   },
   {
     title: "Is it worth implementing a well-being program for your company?",
@@ -41,7 +41,7 @@ const accordionData = [
   {
     title: "How much does the Corporate wellness program cost?",
     content:
-      "Our affordable & customized pricing plans ensure accessibility as per your preferences. Contact us to find the perfect fit for your organization's budget.",
+      "Our affordable & customized pricing plans ensure accessibility as per your preferences. Contact us to find the perfect fit for your organization&apos;s budget.",
   },
 ];
 
@@ -53,11 +53,11 @@ const unlockData = [
   },
   {
     heading: "Life Transitions",
-    para: "Whether you're navigating a relationship breakdown, job loss, or the grieving process, our counselors can help you develop effective coping strategies to overcome life's challenges and emerge stronger.",
+    para: "Whether you&apos;re navigating a relationship breakdown, job loss, or the grieving process, our counselors can help you develop effective coping strategies to overcome life&apos;s challenges and emerge stronger.",
   },
   {
     heading: " Personal Growth",
-    para: "Our sessions focus on empowering you to build self-awareness, improve self- esteem, and cultivate a healthier relationship with your emotions. Together, we'll work towards a more fulfilling and balanced life.",
+    para: "Our sessions focus on empowering you to build self-awareness, improve self- esteem, and cultivate a healthier relationship with your emotions. Together, we&apos;ll work towards a more fulfilling and balanced life.",
   },
 ];
 
@@ -171,7 +171,7 @@ export default async function Home() {
                 <p className="text-left">
                   Our Psychologists use evidence based approach to help
                   individuals with cognitive decline, resulting from conditions
-                  like Alzheimer's, dementia, stroke, or Parkinson's, to enhance
+                  like Alzheimer&apos;s, dementia, stroke, or Parkinson&apos;s, to enhance
                   cognitive abilities and daily functioning skills. This will
                   address memory difficulties, problem-solving challenges, and
                   attention and concentration issues.

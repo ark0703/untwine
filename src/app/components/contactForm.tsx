@@ -19,23 +19,23 @@ const ContactForm = () => {
   const modeRef = useRef(null);
   const platformRef = useRef(null);
 
-  const handleModeSelection = (mode: string) => {
-    setSelectedMode(mode);
-    if (mode === "Virtual") {
-      setData(virtualData);
-    } else if (mode === "Physical") {
-      setData(physicalData);
-    }
-    if (modeRef.current !== null) {
-      modeRef.current.open = false;
-    }
-  };
-  const handlePlatform = (item: string) => {
-    setSelectedPlatform(item);
-    if (platformRef.current !== null) {
-      platformRef.current.open = false;
-    }
-  };
+  // const handleModeSelection = (mode: string) => {
+  //   setSelectedMode(mode);
+  //   if (mode === "Virtual") {
+  //     setData(virtualData);
+  //   } else if (mode === "Physical") {
+  //     setData(physicalData);
+  //   }
+  //   if (modeRef.current !== null) {
+  //     modeRef.current.open = false;
+  //   }
+  // };
+  // const handlePlatform = (item: string) => {
+  //   setSelectedPlatform(item);
+  //   if (platformRef.current !== null) {
+  //     platformRef.current.open = false;
+  //   }
+  // };
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();

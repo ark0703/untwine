@@ -12,7 +12,7 @@ const AboutUntwine: React.FC = () => {
     <div className="text-neutral-content text-xl">
       <p>
         As founders, we understand the importance of mental wellness and the
-        challenges that come with seeking help. That's why we created Untwine -
+        challenges that come with seeking help. That&apos;s why we created Untwine -
         to provide a safe, supportive, and flexible environment for your mental
         health journey.
       </p>
@@ -20,12 +20,12 @@ const AboutUntwine: React.FC = () => {
         <p>
           <br />
           With an optimistic outlook, we genuinely believe that helping people
-          navigate life's ups and downs and being a part of their personal
+          navigate life&apos;s ups and downs and being a part of their personal
           growth journey is the most fulfilling part of being a psychologist.
           <br />
-          <br /> At Untwine, we're committed to helping you unwind, recharge,
+          <br /> At Untwine, we&apos;re committed to helping you unwind, recharge,
           and unlock your full potential. Take the first step towards a
-          healthier, happier you. Explore our services, and let's begin this
+          healthier, happier you. Explore our services, and let&apos;s begin this
           journey together.
         </p>
       )}
